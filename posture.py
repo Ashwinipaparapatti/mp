@@ -36,11 +36,11 @@ def custom_loss(y_true, y_pred):
     return losses.mean_squared_error(y_true, y_pred)  # Replace with your actual loss function
 
 # Load the clustered dataset
-file_path = r"C:\Users\ashwi\OneDrive\Documents\Desktop\mini\Clustered_Nutrition.csv"
+file_path = os.path.join(os.path.dirname(__file__), 'data', 'Clustered_Nutrition.csv')
 nutrition_data = pd.read_csv(file_path, encoding='utf-8')
 
 # Load exercise data
-exercise_data_path = r'C:\Users\ashwi\OneDrive\Documents\Desktop\mini\gym recommendation.xlsx'
+exercise_data_path = os.path.join(os.path.dirname(__file__), 'data', 'gym recommendation.xlsx')
 exercise_data = pd.read_excel(exercise_data_path, sheet_name='Sheet1', engine='openpyxl')
 
 sys.stdout.reconfigure(encoding='utf-8')
