@@ -35,11 +35,6 @@ pose = mp_pose.Pose()
 def custom_loss(y_true, y_pred):
     return losses.mean_squared_error(y_true, y_pred)  # Replace with your actual loss function
 
-# Load the model with the custom loss function
-posture_model = load_model(r"C:\Users\ashwi\OneDrive\Documents\Desktop\mini\posture_model1.keras", 
-                           custom_objects={'loss': custom_loss})
-
-
 # Load the clustered dataset
 file_path = r"C:\Users\ashwi\OneDrive\Documents\Desktop\mini\Clustered_Nutrition.csv"
 nutrition_data = pd.read_csv(file_path, encoding='utf-8')
