@@ -1,8 +1,10 @@
 flask
+gunicorn
+mysql-connector-python
 numpy
 pandas
 matplotlib
 opencv-python
 scikit-learn
 notebook
-gunicorn
+jupyter
