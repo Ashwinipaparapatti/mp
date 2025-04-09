@@ -8,3 +8,8 @@ opencv-python
 scikit-learn
 notebook
 jupyter
+tensorflow
+os
+mediapipe
+logging
+cv2
