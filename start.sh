@@ -1,1 +1,1 @@
-gunicorn -w 4 -b 0.0.0.0:$PORT app:posture
+gunicorn -w 4 -b 0.0.0.0:$PORT posture:app
